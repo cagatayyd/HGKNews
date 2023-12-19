@@ -10,7 +10,7 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("SqlC"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("SqlE"));
 });
 
 builder.Services.Configure<SecurityStampValidatorOptions>(options =>
